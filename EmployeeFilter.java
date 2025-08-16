@@ -1,4 +1,3 @@
-// Simple example showing OOP, streams, and clean coding
 import java.util.*;
 import java.util.stream.*;
 
@@ -22,7 +21,7 @@ public class EmployeeFilter {
             new Employee("Kiran", 45000)
         );
 
-        // Filter employees with salary > 50k and sort by salary
+
         List<String> highEarners = employees.stream()
             .filter(e -> e.getSalary() > 50000)
             .sorted(Comparator.comparingDouble(Employee::getSalary))
